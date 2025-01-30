@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from oscar.defaults import *
@@ -21,7 +22,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-DEBUG = True
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -134,16 +135,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "redpart.wsgi.application"
 
-# AUTHENTICATION_BACKENDS = (
-#     'oscar.apps.customer.auth_backends.EmailBackend',
-#     'django.contrib.auth.backends.ModelBackend',
-# )
+AUTHENTICATION_BACKENDS = (
+    'oscar.apps.customer.auth_backends.EmailBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 DEFAULT_AUTO_FIELD ="django.db.models.BigAutoField"
 
 HAYSTACK_CONNECTIONS = {
-    'default': {
-        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    "default": {
+        "ENGINE": "haystack.backends.simple_backend.SimpleEngine",
     },
 }
 # Database
