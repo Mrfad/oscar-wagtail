@@ -6,13 +6,15 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from django.apps import apps
-
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path('', include(apps.get_app_config('oscar').urls[0])),
+    path('tester/', TemplateView.as_view(template_name= "header-spaceship-variant-one.html"))
+
     
 
 ]

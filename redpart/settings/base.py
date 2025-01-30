@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-
+DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -125,6 +125,8 @@ TEMPLATES = [
                 "oscar.apps.checkout.context_processors.checkout",
                 "oscar.apps.communication.notifications.context_processors.notifications",
                 "oscar.core.context_processors.metadata",
+
+                "redpart.context_processors.oscar_shop_tagline",
             ],
         },
     },
@@ -132,10 +134,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "redpart.wsgi.application"
 
-AUTHENTICATION_BACKENDS = (
-    'oscar.apps.customer.auth_backends.EmailBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
+# AUTHENTICATION_BACKENDS = (
+#     'oscar.apps.customer.auth_backends.EmailBackend',
+#     'django.contrib.auth.backends.ModelBackend',
+# )
 
 DEFAULT_AUTO_FIELD ="django.db.models.BigAutoField"
 
