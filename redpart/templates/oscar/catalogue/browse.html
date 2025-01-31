@@ -26,19 +26,7 @@
     </div>
 </div>
 
-{% for product in object_list %}
-    <p>Product: {{ product.title }}</p>
-{% empty %}
-    <p>❌ No products found in template!</p>
-{% endfor %}
 
-<pre>{{ context|pprint }}</pre>
-<!-- Breadcrumb end -->
-{% for product in products %}
-    <p>✅ Product: {{ product.title }}</p>
-{% empty %}
-    <p>❌ No products found in template!</p>
-{% endfor %}
 <div class="block-split block-split--has-sidebar">
     <div class="container">
         <div class="block-split__row row no-gutters">
@@ -126,11 +114,9 @@ C0.4,4,0,3.6,0,3.2V0.8C0,0.4,0.4,0,0.8,0h14.4C15.6,0,16,0.4,16,0.8v2.4C16,3.6,15
                         <!-- Product view options end -->
 
                         <!-- Product start -->
-                        {% for product in products %}
-                        Products: {% render_product product %}
-                    {% endfor %}
-                        {% if products %}
-                            {% for product in products %}
+
+                        {% for product in object_list %}
+
                             <div class="products-view__list products-list products-list--grid--4"
                                 data-layout="list" data-with-features="false">
                                 <div class="products-list__head">
@@ -149,8 +135,11 @@ C0.4,4,0,3.6,0,3.2V0.8C0,0.4,0.4,0,0.8,0h14.4C15.6,0,16,0.4,16,0.8v2.4C16,3.6,15
                                     <!-- Single product end -->
                                 </div>
                             </div>
-                            {% endfor %}
-                        {% endif %}
+                            {% empty %}
+                            <p>❌ No products found in template!</p>
+                        {% endfor %}
+
+
                         <!-- Product end -->
 
                         <!-- Pagination start -->
