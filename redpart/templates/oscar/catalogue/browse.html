@@ -115,7 +115,7 @@ C0.4,4,0,3.6,0,3.2V0.8C0,0.4,0.4,0,0.8,0h14.4C15.6,0,16,0.4,16,0.8v2.4C16,3.6,15
 
                         <!-- Product start -->
 
-                        {% for product in object_list %}
+                            {% for product in object_list %}
 
                             <div class="products-view__list products-list products-list--grid--4"
                                 data-layout="list" data-with-features="false">
@@ -136,7 +136,7 @@ C0.4,4,0,3.6,0,3.2V0.8C0,0.4,0.4,0,0.8,0h14.4C15.6,0,16,0.4,16,0.8v2.4C16,3.6,15
                                 </div>
                             </div>
                             {% empty %}
-                            <p>❌ No products found in template!</p>
+                            <p>❌ No products found!</p>
                         {% endfor %}
 
 
