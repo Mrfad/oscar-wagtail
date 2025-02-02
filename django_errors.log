@@ -2107,3 +2107,1885 @@ Traceback (most recent call last):
     raise TemplateSyntaxError(
 django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!=None' from '!=None'
 "GET /catalogue/Brandix-Brake_1/ HTTP/1.1" 500 437636
+Internal Server Error: /dashboard/catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 786, in primary_image
+    return images[0]
+           ~~~~~~^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1527, in symlink_missing_image
+    os.symlink(static_file_path, media_file_path)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\oscar324\\Lib\\site-packages\\oscar\\static\\oscar\\img\\image_not_found.jpg' -> 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\media\\image_not_found.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\templatetags\django_tables2.py", line 167, in render
+    return template.render(context={"table": table}, request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 244, in items
+    column.current_value = self.get_cell(column.name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 197, in get_cell
+    return self._get_and_render_with(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 173, in _get_and_render_with
+    return render_func(bound_column, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 206, in _call_render
+    content = call_with_appropriate(bound_column.render, render_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\utils.py", line 572, in call_with_appropriate
+    return fn(**kwargs)
+           ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\columns\templatecolumn.py", line 68, in render
+    return get_template(self.template_name).render(context.flatten())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 791, in primary_image
+    missing_image = self.get_missing_image()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 765, in get_missing_image
+    return MissingProductImage()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1516, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1529, in symlink_missing_image
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Please copy/symlink the 'missing image' image at C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\static\oscar\img\image_not_found.jpg into your MEDIA_ROOT at C:\Users\fady\Documents\django projects\part-shop\media. This exception was raised because Oscar was unable to symlink it for you.
+"GET /dashboard/catalogue/ HTTP/1.1" 500 660761
+Internal Server Error: /dashboard/catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 786, in primary_image
+    return images[0]
+           ~~~~~~^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1527, in symlink_missing_image
+    os.symlink(static_file_path, media_file_path)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\oscar324\\Lib\\site-packages\\oscar\\static\\oscar\\img\\image_not_found.jpg' -> 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\media\\image_not_found.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\templatetags\django_tables2.py", line 167, in render
+    return template.render(context={"table": table}, request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 244, in items
+    column.current_value = self.get_cell(column.name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 197, in get_cell
+    return self._get_and_render_with(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 173, in _get_and_render_with
+    return render_func(bound_column, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 206, in _call_render
+    content = call_with_appropriate(bound_column.render, render_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\utils.py", line 572, in call_with_appropriate
+    return fn(**kwargs)
+           ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\columns\templatecolumn.py", line 68, in render
+    return get_template(self.template_name).render(context.flatten())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 791, in primary_image
+    missing_image = self.get_missing_image()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 765, in get_missing_image
+    return MissingProductImage()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1516, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1529, in symlink_missing_image
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Please copy/symlink the 'missing image' image at C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\static\oscar\img\image_not_found.jpg into your MEDIA_ROOT at C:\Users\fady\Documents\django projects\part-shop\media. This exception was raised because Oscar was unable to symlink it for you.
+"GET /dashboard/catalogue/ HTTP/1.1" 500 660898
+Internal Server Error: /dashboard/catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 786, in primary_image
+    return images[0]
+           ~~~~~~^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1527, in symlink_missing_image
+    os.symlink(static_file_path, media_file_path)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\oscar324\\Lib\\site-packages\\oscar\\static\\oscar\\img\\image_not_found.jpg' -> 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\media\\image_not_found.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\templatetags\django_tables2.py", line 167, in render
+    return template.render(context={"table": table}, request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 244, in items
+    column.current_value = self.get_cell(column.name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 197, in get_cell
+    return self._get_and_render_with(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 173, in _get_and_render_with
+    return render_func(bound_column, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 206, in _call_render
+    content = call_with_appropriate(bound_column.render, render_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\utils.py", line 572, in call_with_appropriate
+    return fn(**kwargs)
+           ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\columns\templatecolumn.py", line 68, in render
+    return get_template(self.template_name).render(context.flatten())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 791, in primary_image
+    missing_image = self.get_missing_image()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 765, in get_missing_image
+    return MissingProductImage()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1516, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1529, in symlink_missing_image
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Please copy/symlink the 'missing image' image at C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\static\oscar\img\image_not_found.jpg into your MEDIA_ROOT at C:\Users\fady\Documents\django projects\part-shop\media. This exception was raised because Oscar was unable to symlink it for you.
+"GET /dashboard/catalogue/ HTTP/1.1" 500 660898
+Internal Server Error: /dashboard/catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 786, in primary_image
+    return images[0]
+           ~~~~~~^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1527, in symlink_missing_image
+    os.symlink(static_file_path, media_file_path)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\oscar324\\Lib\\site-packages\\oscar\\static\\oscar\\img\\image_not_found.jpg' -> 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\media\\image_not_found.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\templatetags\django_tables2.py", line 167, in render
+    return template.render(context={"table": table}, request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 244, in items
+    column.current_value = self.get_cell(column.name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 197, in get_cell
+    return self._get_and_render_with(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 173, in _get_and_render_with
+    return render_func(bound_column, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 206, in _call_render
+    content = call_with_appropriate(bound_column.render, render_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\utils.py", line 572, in call_with_appropriate
+    return fn(**kwargs)
+           ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\columns\templatecolumn.py", line 68, in render
+    return get_template(self.template_name).render(context.flatten())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 791, in primary_image
+    missing_image = self.get_missing_image()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 765, in get_missing_image
+    return MissingProductImage()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1516, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1529, in symlink_missing_image
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Please copy/symlink the 'missing image' image at C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\static\oscar\img\image_not_found.jpg into your MEDIA_ROOT at C:\Users\fady\Documents\django projects\part-shop\media. This exception was raised because Oscar was unable to symlink it for you.
+"GET /dashboard/catalogue/ HTTP/1.1" 500 660898
+Internal Server Error: /dashboard/catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 786, in primary_image
+    return images[0]
+           ~~~~~~^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\db\models\query.py", line 432, in __getitem__
+    return self._result_cache[k]
+           ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1527, in symlink_missing_image
+    os.symlink(static_file_path, media_file_path)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\oscar324\\Lib\\site-packages\\oscar\\static\\oscar\\img\\image_not_found.jpg' -> 'C:\\Users\\fady\\Documents\\django projects\\part-shop\\media\\image_not_found.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\templatetags\django_tables2.py", line 167, in render
+    return template.render(context={"table": table}, request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 244, in items
+    column.current_value = self.get_cell(column.name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 197, in get_cell
+    return self._get_and_render_with(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 173, in _get_and_render_with
+    return render_func(bound_column, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\rows.py", line 206, in _call_render
+    content = call_with_appropriate(bound_column.render, render_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\utils.py", line 572, in call_with_appropriate
+    return fn(**kwargs)
+           ^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django_tables2\columns\templatecolumn.py", line 68, in render
+    return get_template(self.template_name).render(context.flatten())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 791, in primary_image
+    missing_image = self.get_missing_image()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 765, in get_missing_image
+    return MissingProductImage()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1516, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\apps\catalogue\abstract_models.py", line 1529, in symlink_missing_image
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Please copy/symlink the 'missing image' image at C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\static\oscar\img\image_not_found.jpg into your MEDIA_ROOT at C:\Users\fady\Documents\django projects\part-shop\media. This exception was raised because Oscar was unable to symlink it for you.
+"GET /dashboard/catalogue/ HTTP/1.1" 500 660898
+Internal Server Error: /catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 206, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 50: 'endor', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /catalogue/ HTTP/1.1" 500 322962
+Internal Server Error: /catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 206, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\library.py", line 130, in compile_func
+    args, kwargs = parse_bits(
+                   ^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\library.py", line 347, in parse_bits
+    args.append(parser.compile_filter(bit))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-2' from 'depth-2'
+"GET /catalogue/ HTTP/1.1" 500 295067
+Internal Server Error: /catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 99, in get_annotated_list
+    info = CheapCategoryInfo(parent, url="")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 52, in __init__
+    self["item_count"] = category.item_count
+                         ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'item_count'
+"GET /catalogue/ HTTP/1.1" 500 232735
+Internal Server Error: /catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 99, in get_annotated_list
+    info = CheapCategoryInfo(parent, url="")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 52, in __init__
+    self["item_count"] = category.item_count
+                         ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'item_count'
+"GET /catalogue/ HTTP/1.1" 500 232899
+Internal Server Error: /catalogue/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 99, in get_annotated_list
+    info = CheapCategoryInfo(parent, url="")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\oscar\templatetags\category_tags.py", line 52, in __init__
+    self["item_count"] = category.item_count
+                         ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'item_count'
+"GET /catalogue/ HTTP/1.1" 500 232899
+"GET /catalogue/ HTTP/1.1" 500 229319
+Internal Server Error: /catalogue/category/interial-parts/steering-wheels_9/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'extend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1: 'extend'. Did you forget to register or load this tag?
+"GET /catalogue/category/interial-parts/steering-wheels_9/ HTTP/1.1" 500 161770
+Internal Server Error: /catalogue/category/books/non-fiction_16/
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\fady\Documents\django projects\part-shop\oscar324\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 51: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /catalogue/category/books/non-fiction_16/ HTTP/1.1" 500 232049
