@@ -30,34 +30,37 @@ C11.2,9.8,11.2,10.4,10.8,10.8z" />
                                     <div class="filter__container">
                                         <div class="filter-categories">
                                             <ul class="filter-categories__list">
-
-                                            {% category_tree depth=2 as tree_categories %}
-                                            {% for tree_category in tree_categories %}
-                                                {%  if tree_category.has_children  %}
-                                                    <li class="filter-categories__item filter-categories__item--current">
-                                                        <a href="{{ tree_category.url }}">{{ tree_category.name }}</a>
-                                                        <div class="filter-categories__counter">
-                                                            {{ tree_category.category.get_num_products }}
-                                                        </div>
-                                                    </li>
-                                                    {% for child_category in tree_category %}
-                                                    <li class="filter-categories__item filter-categories__item--child">
-                                                        <a href="{{child_category.url}}">{{child_category.name}}</a>
-                                                        <div class="filter-categories__counter">
-                                                            {{ child_category.category.get_num_products }}
-                                                        </div>
-                                                    </li>
+                                                {% category_tree depth=3 as tree_categories %}
+                                                <ul class="filter-categories__list">
+                                                    {% for tree_category in tree_categories %}
+                                                        {% if tree_category.has_children %}
+                                                            <!-- Render the parent category -->
+                                                            <li class="filter-categories__item filter-categories__item--current">
+                                                                <a href="{{ tree_category.url }}">{{ tree_category.name }}</a>
+                                                                <div class="filter-categories__counter">
+                                                                    {{ tree_category.category.get_num_products }}
+                                                                </div>
+                                                            </li>
+                                                            <!-- Render the child categories -->
+                                                            {% for child_category in tree_category.get_children %}
+                                                                <li class="filter-categories__item filter-categories__item--child">
+                                                                    <a href="{{ child_category.url }}">{{ child_category.name }}</a>
+                                                                    <div class="filter-categories__counter">
+                                                                        {{ child_category.category.get_num_products }}
+                                                                    </div>
+                                                                </li>
+                                                            {% endfor %}
+                                                        {% else %}
+                                                            <!-- Render categories without children -->
+                                                            <li class="filter-categories__item filter-categories__item--parent">
+                                                                <a href="{{ tree_category.url }}">{{ tree_category.name }}</a>
+                                                                <div class="filter-categories__counter">
+                                                                    {{ tree_category.category.get_num_products }}
+                                                                </div>
+                                                            </li>
+                                                        {% endif %}
                                                     {% endfor %}
-                                                {% else %}
-                                                    <li class="filter-categories__item filter-categories__item--parent">
-                                                        <a href="{{tree_category.url}}">{{tree_category.name}}</a>
-                                                        <div class="filter-categories__counter">
-                                                            {{tree_category.category.get_num_products}}
-                                                        </div>
-                                                    </li>
-                                                {% endif %}
-                                            {% endfor %}
-                                                
+                                                </ul>
                                             </ul>
                                         </div>
                                     </div>
