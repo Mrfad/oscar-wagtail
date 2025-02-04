@@ -14,11 +14,16 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from oscar.defaults import *
+import pysolr
 
+from django.utils.translation import gettext_lazy as _
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.16.193']
+SOLR_URL = 'HTTP://127.0.0.1:8983/solr/'
+SOLR_CORE = 'redpart'
+SOLR_CONNECTION = pysolr.Solr(SOLR_URL + SOLR_CORE, timeout=10)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -34,7 +39,7 @@ INSTALLED_APPS = [
     "wagtail.snippets",
     "wagtail.documents",
     "wagtail.images",
-    "wagtail.search",
+    # "wagtail.search",
     "wagtail.admin",
     "wagtail",
     "modelcluster",
@@ -142,9 +147,19 @@ AUTHENTICATION_BACKENDS = (
 
 DEFAULT_AUTO_FIELD ="django.db.models.BigAutoField"
 
+# HAYSTACK_CONNECTIONS = {
+#     "default": {
+#         "ENGINE": "haystack.backends.simple_backend.SimpleEngine",
+#     },
+# }
+
+# Solr 6.x
 HAYSTACK_CONNECTIONS = {
-    "default": {
-        "ENGINE": "haystack.backends.simple_backend.SimpleEngine",
+    'default': {
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://127.0.0.1:8983/solr/redpart',
+        'ADMIN_URL': 'http://127.0.0.1:8983/solr/admin/cores',
+        'INCLUDE_SPELLING': True,
     },
 }
 # Database
@@ -229,11 +244,11 @@ WAGTAIL_SITE_NAME = "redpart"
 
 # Search
 # https://docs.wagtail.org/en/stable/topics/search/backends.html
-WAGTAILSEARCH_BACKENDS = {
-    "default": {
-        "BACKEND": "wagtail.search.backends.database",
-    }
-}
+# WAGTAILSEARCH_BACKENDS = {
+#     "default": {
+#         "BACKEND": "wagtail.search.backends.database",
+#     }
+# }
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
@@ -245,3 +260,57 @@ WAGTAILADMIN_BASE_URL = "http://example.com"
 # see https://docs.wagtail.org/en/stable/advanced_topics/deploying.html#user-uploaded-files
 WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
 
+OSCAR_SEARCH_FACETS = {
+    "fields":{},
+
+    "queries":{
+        "product_class":{
+            "name":_("PRODUCT TYPES"),
+            "field":"product_class",
+            "queries":[
+                (_("T-shirt"), "T-shirt")
+            ]
+        },
+        "rating":{
+            "name":_("RATINGS"),
+            "field":"rating",
+            "queries":[
+                (_("1"),"1"),
+                (_("2"),"2"),
+                (_("3"),"3"),
+                (_("4"),"4"),
+                (_("5"),"5"),
+            ]
+        },
+        "price_range":{
+            "name":_("PRICE RANGE"),
+            "field": "price",
+            "queries": [
+                (_('0 to 20'),'[0 TO 20]'),
+                (_('20 to 40'),'[20 TO 40]'),
+                (_('40 to 60'),'[40 TO 60]'),
+                (_('60+'),'[60 TO *]'),
+            ]
+        },
+        "color": {
+            "name":_("COLOR"),
+            "field": "color",
+            "queries": [
+            (_('Green'), 'Green'),
+            (_('White'), 'White'),
+            (_('Blue'), 'Blue'),
+            (_('Black'), 'Black'),
+            (_('Purple'), 'Purple'),
+            (_('Pink'), 'Pink'),
+            (_('Orange'), 'Ornge'),
+            (_('Yellow'), 'Yellow'),
+            (_('Red'), 'Red'),
+            (_('Grey'), 'Grey'),
+            (_('Brown'), 'Brown'),
+            (_('Silver'), 'Silver'),
+            (_('Gold'), 'Gold'),
+        ]
+    }
+}
+       
+}

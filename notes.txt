@@ -57,3 +57,67 @@ class CatalogueView(BaseSearchView):
         {% endif %}
     {% endfor %}
 </ul>
+
+############################################################
+# run solr
+you need java version 8
+sudo apt update
+sudo apt install openjdk-8-jdk -y
+sudo update-alternatives --config java
+
+wget -O ${HOME}/solr-6.6.6.tgz https://archive.apache.org/dist/lucene/solr/6.6.6/solr-6.6.6.tgz
+tar xzf ${HOME}/solr-6.6.6.tgz --directory=${HOME}
+ln -s ${HOME}/solr-6.6.6 ${HOME}/solr
+
+cd ${HOME}/solr
+./bin/solr start
+./bin/solr create -c sandbox -n redpart
+
+# to add color indexing we go to oscar virtual environment oscar324/lib/python3.12/site-packages/oscar/apps/search/search_indexes.py
+from apps.catalogue.models import Product
+
+# add the color field for faceting
+    # Fields for faceting
+    product_class = indexes.CharField(null=True, faceted=True)
+    category = indexes.MultiValueField(null=True, faceted=True)
+    price = indexes.FloatField(null=True, faceted=True)
+    num_in_stock = indexes.IntegerField(null=True, faceted=True)
+    rating = indexes.IntegerField(null=True, faceted=True)
+    color = indexes.CharField(null=True, faceted=True) # addd this line
+
+
+# create prepare_color method
+def prepare_color(self, obj):
+        # get the actual color value from the model instance
+        color_value = obj.color
+        # map the color value to it's corresponding display name
+        color_display_name = dict(Product.COLOR_CHOICES).get(color_value)
+        return color_display_name
+
+
+after that you can integrate haystack to settings.py
+if wagtail is installed remove or comment the below 
+
+
+# "wagtail.search",
+
+# Search
+# https://docs.wagtail.org/en/stable/topics/search/backends.html
+# WAGTAILSEARCH_BACKENDS = {
+#     "default": {
+#         "BACKEND": "wagtail.search.backends.database",
+#     }
+# }
+
+# after that run the following command
+(oscar324) fadygh@webserver24:~/projects/oscar-wagtail$ python manage.py build_solr_schema --configure-directory=${HOME}/solr/server/solr/redpart/conf
+Trying to configure core located at /home/fadygh/solr/server/solr/redpart/conf
+
+(oscar324) fadygh@webserver24:~/projects/oscar-wagtail$ python manage.py build_solr_schema --reload redpart
+Trying to reload core named redpart
+
+(oscar324) fadygh@webserver24:~/projects/oscar-wagtail$ python manage.py rebuild_index --noinput
+Removing all documents from your index because you said so.
+All documents removed.
+Indexing 200 Products
+#################################################################
