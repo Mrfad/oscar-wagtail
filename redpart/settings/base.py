@@ -17,6 +17,7 @@ from oscar.defaults import *
 import pysolr
 
 from django.utils.translation import gettext_lazy as _
+
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
@@ -268,7 +269,7 @@ OSCAR_SEARCH_FACETS = {
             "name":_("PRODUCT TYPES"),
             "field":"product_class",
             "queries":[
-                (_("T-shirt"), "T-shirt")
+                (_("Book"), "Book")
             ]
         },
         "rating":{
